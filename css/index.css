@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 1em;
+  background-color: white;
+}
+header .logo {
+  color: black;
+}
+header .logo h3 {
+  font-weight: 500;
+}
+
+nav {
+  width: auto;
+  height: auto;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+nav ul a {
+  display: block;
+  margin: 0 0.5em;
+  color: black;
+}
+nav ul a:last-child {
+  margin-right: 0;
+}
+nav ul a.icon-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.index-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+.index-container .project {
+  position: relative;
+  margin: 0.5em 0;
+  cursor: pointer;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+.index-container .project img {
+  width: 100%;
+}
+.index-container .project .overlay {
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 2em;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.9) 80%);
+  transition: opacity ease-in-out 0.3s;
+  opacity: 0;
+}
+.index-container .project .overlay:hover {
+  opacity: 1;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+}
+footer p {
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 680px) {
+  header {
+    height: 50px;
+    padding: 0 2em;
+  }
+  header .logo h3 {
+    font-size: 1.5rem;
+  }
+  nav ul a {
+    margin: 0 1em;
+    font-size: 1.25rem;
+  }
+  nav ul a:last-child {
+    margin-right: 0;
+  }
+  .index-container {
+    padding: 0 2em;
+    -moz-columns: 3;
+         columns: 3;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .index-container .project {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  .index-container .project .overlay {
+    padding: 1em;
+  }
+  .index-container .project .overlay h3 {
+    font-size: 1rem;
+  }
+  footer {
+    padding: 0.5em 2em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header {
+    padding: 0 5em;
+  }
+  .index-container {
+    padding: 0 5em;
+    -moz-columns: 4;
+         columns: 4;
+  }
+  footer {
+    padding: 0.5em 5em;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .index-container .project .overlay {
+    padding: 1.5em;
+  }
+  .index-container .project .overlay h3 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=index.css.map */
