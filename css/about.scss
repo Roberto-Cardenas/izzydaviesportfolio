@@ -1,0 +1,70 @@
+.about-container {
+  img {
+    width: 100%;
+  }
+
+  .about {
+    padding: 1em;
+
+    font-family: 'Cormorant', serif;
+
+    h1 {
+      font-style: italic;
+      padding-bottom: 0.25em;
+    }
+
+    p {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .about-container {
+    columns: 2;
+    column-gap: 1em;
+    margin-bottom: 1em;
+
+    .about {
+      padding: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-container {
+    .about {
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .about-container {
+    .about {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .about-container {
+    .about {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.75rem;
+      }
+    }
+  }
+}

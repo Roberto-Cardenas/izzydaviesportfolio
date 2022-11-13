@@ -72,6 +72,7 @@ nav ul a.icon-link {
   cursor: pointer;
   -moz-column-break-inside: avoid;
        break-inside: avoid;
+  display: block;
 }
 .index-container .project img {
   width: 100%;
@@ -121,8 +122,10 @@ footer p {
   nav ul a:last-child {
     margin-right: 0;
   }
-  .index-container {
+  main {
     padding: 0 2em;
+  }
+  .index-container {
     -moz-columns: 3;
          columns: 3;
     -moz-column-gap: 20px;
@@ -146,8 +149,10 @@ footer p {
   header {
     padding: 0 5em;
   }
-  .index-container {
+  main {
     padding: 0 5em;
+  }
+  .index-container {
     -moz-columns: 4;
          columns: 4;
   }

@@ -83,6 +83,8 @@ nav {
     cursor: pointer;
     break-inside: avoid;
 
+    display: block;
+
     img {
       width: 100%;
     }
@@ -154,9 +156,11 @@ footer {
     }
   }
 
-  .index-container {
+  main {
     padding: 0 2em;
+  }
 
+  .index-container {
     columns: 3;
     column-gap: 20px;
 
@@ -184,8 +188,11 @@ footer {
     padding: 0 5em;
   }
 
-  .index-container {
+  main {
     padding: 0 5em;
+  }
+
+  .index-container {
     columns: 4;
   }
 
